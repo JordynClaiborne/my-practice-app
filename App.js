@@ -284,6 +284,7 @@ function CSSLearning() {
               <li>Grid Item: direct descendants of the grid container.</li>
               <li>Grid Cell: the space between two row grid lines and two column grid lines, AKA a single unit (think of it as a box).</li>
             </ul>
+            <h4><a href="#table">Table to test on</a></h4>
 
             <h3><a href="#grid-container">Grid Container Properties</a></h3>
             <ul>
@@ -313,11 +314,11 @@ function CSSLearning() {
               <li><a href="#grid-column-end">grid-column-end</a></li>
               <li><a href="#grid-row-start">grid-row-start</a></li>
               <li><a href="#grid-row-end">grid-row-end</a></li>
-              <li>grid-column</li>
-              <li>grid-row</li>
+              <li><a href="#grid-column">grid-column</a></li>
+              <li><a href="#grid-row">grid-row</a></li>
               <li><a href="#grid-area">grid-area</a></li>
-              <li>justify-self</li>
-              <li>align-self</li>
+              <li><a href="#justify-self">justify-self</a></li>
+              <li><a href="#align-self">align-self</a></li>
               <li>place-self</li>
             </ul>
 
@@ -359,6 +360,7 @@ function CSSLearning() {
           <img src="one-line-two-names-example.png" width="600"/>
           <p>Use the repeat() notation as a trick for repeating parts.</p>
           <p>Example:</p>
+          <div id="table">          
           <div className="test">
             <div className="item1">1</div>
             <div className="item2">2</div>
@@ -368,9 +370,17 @@ function CSSLearning() {
           </div>
           </div>
 
+          <div className="test2">
+            <div className="thing1">1</div>
+            <div className="thing2">2</div>
+            <div className="thing3">3</div>
+            <div className="thing4">4</div>
+          </div>
+          </div>
+
           <div id="grid-items">
             <h2><a href="#css-grid">Grid Items Properties</a></h2>
-          </div>
+          
           <div id="grid-area">
             <h3>grid-area</h3>
             <p>Shorthand for grid-row-start, grid-column-start, grid-row-end and grid-column-end; specifies a grid item's size and location in a grid layout.</p>
@@ -394,6 +404,38 @@ function CSSLearning() {
             <h4>grid-column-end</h4>
             <p>Specifies how many columns a grid item will span.</p>
             <video controls src="grid-column-end-video.mp4" width="600"/>
+          </div>
+          <div id="grid-column">
+            <h4>grid-column</h4>
+            <p>Shorthand for grid-column-start and grid-column-end (in that order).</p>
+            <p>Example:</p>
+            <video controls src="grid-column-video.mp4" width="600"/>
+          </div>
+          <div id="grid-row">
+            <h4>grid-row</h4>
+            <p>Shorthand for grid-row-start and grid-row-end (in that order).</p>
+            <p>Example:</p>
+            <video controls src="grid-row-video.mp4" width="600"/>
+          </div>
+          <div id="justify-self">
+            <h4>justify-self</h4>
+            <p>Used for moving a specified grid item in the inline direction (left and right).</p>
+            <p>Example:</p> {/* CURRENTLY WORKING ON THIS */}
+            <video controls src="justify-self-video.mp4" width="600"/>
+          </div>
+          <div id="align-self">
+            <h4>align-self</h4>
+            <p>Used for moving a specified grid item in the block direction (downward).</p>
+            <p>Example:</p>
+            <video controls src="align-self-video (grid items).mp4" width="600"/>
+          </div>
+          <div id="place-self">
+            <h4>place-self</h4>
+            <p>Shorthand for align-self and justify-self.</p>
+            <p>(Two values = first is align-self, second is justify-self. One value = value is set for both align-self and justify-self.)</p>
+            <p>Example:</p>
+            <video controls src="" width="600"/>
+          </div>
           </div>
 
           <h2>General Things</h2>

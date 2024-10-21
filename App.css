@@ -10,10 +10,14 @@
   display: grid;
   justify-items: center;
 }
-/* #css-grid {
+#grid-items {
   display: grid;
   justify-items: center;
-} */
+}
+#css-grid {
+  display: grid;
+  justify-items: center;
+}
 .squares{
   padding-top: 500px;
   padding-bottom: 700px;
@@ -77,6 +81,7 @@
 .test {
   margin-top: 500px;
   margin-bottom: 500px;
+  margin-left: 175px;
   display: grid;
   grid-template-columns: auto auto auto auto;  
   grid-gap: 2.5px;
@@ -102,8 +107,8 @@
   align-items: center;
   font-size: 30px; */
 }
-.item1 {
-  grid-column-end: span 1;  /*default setting :) adjust the width on the div that controls everything, not the individual boxes */
+.item5 {
+  justify-self: auto; /* default value */
 }
 /* LOOK AT CODE ABOVE */
 
