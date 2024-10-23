@@ -275,7 +275,7 @@ function CSSLearning() {
           </div>
 
           <div id="css-grid">
-            <h2>CSS Grid</h2>
+            <h2><a href="#wrapper">CSS Grid</a></h2>
             <h3>Important Terminology</h3>
             <ul>
               <li>Grid Container: the element that results from display: grid and the direct parents of all grid items.</li>
@@ -284,19 +284,19 @@ function CSSLearning() {
               <li>Grid Item: direct descendants of the grid container.</li>
               <li>Grid Cell: the space between two row grid lines and two column grid lines, AKA a single unit (think of it as a box).</li>
             </ul>
-            <h4><a href="#table">Table to test on</a></h4>
+            <h4><a href="#table">Tables to Test On</a></h4>
 
             <h3><a href="#grid-container">Grid Container Properties</a></h3>
             <ul>
               <li><a href="#display">display</a></li>
               <li><a href="#rows-and-columns">grid-template-columns</a></li>
               <li><a href="#rows-and-columns">grid-template-rows</a></li>
-              <li>grid-template-areas</li>
-              <li>grid-template</li>
-              <li>grid-column-gap</li>
-              <li>grid-row-gap</li>
-              <li>grid-gap</li>
-              <li>justify-items</li>
+              <li><a href="#grid-template-areas">grid-template-areas</a></li>
+              <li><a href="#grid-template">grid-template</a></li>
+              <li><a href="#grid-column-gap">grid-column-gap</a></li>
+              <li><a href="#grid-row-grid">grid-row-gap</a></li>
+              <li><a href="#grid-gap">grid-gap</a></li>
+              <li><a href="#justify-items">justify-items</a></li>
               <li>align-items</li>
               <li>place-items</li>
               <li>justify-content</li>
@@ -319,7 +319,7 @@ function CSSLearning() {
               <li><a href="#grid-area">grid-area</a></li>
               <li><a href="#justify-self">justify-self</a></li>
               <li><a href="#align-self">align-self</a></li>
-              <li>place-self</li>
+              <li><a href="#place-self">place-self</a></li>
             </ul>
 
             <h3><a href="#general-grid">General/Uncategorized Stuff</a></h3>
@@ -349,7 +349,44 @@ function CSSLearning() {
           <img src="rows-and-columns-example.png" width="600"/>
           <h4>&lt;track-size&gt;</h4>
           <p>Can be put in as a length, a percentage or a fraction (unit: fr).</p>
-          
+          </div>
+          <div id="grid-template-areas">
+            <h4>grid-template-areas</h4>
+            <p>Specifies areas within the grid layout (specify names for the items using grid-area; use periods for a grid item with no name).</p>
+            <p>Example:</p>
+            <video controls src="grid-template-areas" width="600"/>
+          </div>
+          <div id="grid-template">
+            <h4>grid-template</h4>
+            <p>Shorthand for grid-template-rows, grid-template-columns and grid-template-areas.</p>
+            <p>Example:</p>
+            <video controls src="grid-template-video (pt1).mp4" width="600"/>
+          </div>
+          <div id="grid-column-gap">
+            <h4>grid-column-gap</h4>
+            <p>Controls how much gap there is between columns.</p>
+            <p>Example:</p>
+            <img src="grid-column-gap.png" width="600"/>
+          </div>
+          <div id="grid-row-gap">
+            <h4>grid-row-gap</h4>
+            <p>Controls how much gap there is between rows.</p>
+            <p>Example:</p>
+            <img src="grid-row-gap.png" width="600"/>
+          </div>
+          <div id="grid-gap">
+            <h4>grid-gap</h4>
+            <p>Shorthand for grid-row-gap and grid-column-gap (in that order).</p>
+            <p>Example:</p>
+            <video controls src="grid-gap-video.mp4" width="600"/>
+          </div>
+          <div id="justify-items">
+            <h4>justify-items</h4>
+            <p>Used to move grid items in the inline direction (left and right).</p>
+            <p>Example:</p>
+            <video controls src="justify-items-video.mp4" width="600"/>
+          </div>
+
           <h4>&lt;line-name&gt;</h4>
           <p>Can name columns and rows any name you want.</p>
           <p>Grid lines are automatically assigned positive numbers based on where they're placed (-1 is an alternate for the last row).<br/>However, they can be named whatever you want them to be.</p>
@@ -376,13 +413,14 @@ function CSSLearning() {
             <div className="thing3">3</div>
             <div className="thing4">4</div>
           </div>
-          </div>
+          
 
           <div id="grid-items">
             <h2><a href="#css-grid">Grid Items Properties</a></h2>
-          
+
+
           <div id="grid-area">
-            <h3>grid-area</h3>
+            <h4>grid-area</h4>
             <p>Shorthand for grid-row-start, grid-column-start, grid-row-end and grid-column-end; specifies a grid item's size and location in a grid layout.</p>
           </div>
           <div id="grid-row-start">
@@ -434,7 +472,7 @@ function CSSLearning() {
             <p>Shorthand for align-self and justify-self.</p>
             <p>(Two values = first is align-self, second is justify-self. One value = value is set for both align-self and justify-self.)</p>
             <p>Example:</p>
-            <video controls src="" width="600"/>
+            <video controls src="place-self-video.mp4" width="600"/>
           </div>
           </div>
 

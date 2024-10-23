@@ -108,16 +108,50 @@
   font-size: 30px; */
 }
 .item5 {
-  justify-self: auto; /* default value */
+  align-self: auto; /* default value :) */
+}
+
+.test2 {
+  /* margin-left: 175px; */
+  display: grid;
+  /* grid-gap: 3px; */
+  grid-gap: 4px 1px; /* LOOK HERE */
+  grid-template: auto auto auto / auto auto auto; /* row size / column size */
+  /* grid-template-areas: 'thing1 thing1 . .', 'thing1 . . .'; sets thing1 to two columns :) */
+  height: 300px;
+  width: 500px;
+  background-color: pink;
+  justify-items: legacy; /* default value :) */
+}
+.test2 > div {
+  background-color: red;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  
+  
+}
+.thing1 {
+  /* grid-area: stuff; sets the name for the specific item */
+}
+.thing2 {
+  grid-row: 4;
+}
+.thing3 {
+  grid-column: 4;
+}
+.thing4 {
+  grid-row: 4;
+  grid-column: 4; 
 }
 /* LOOK AT CODE ABOVE */
 
-.desEx p {
+/*.desEx p {
   color: purple;
 }
 /* div > video {
   border: 2px dashed blue;
-} */
+}
 .apple ~ p {
   color: blue;
-} /* all elements after apple will be affected :)*/
+}  all elements after apple will be affected :) */
