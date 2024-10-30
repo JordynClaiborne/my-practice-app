@@ -1,6 +1,6 @@
 import './App.css';
 
-function CSSLearning() {
+function App() {
   return (
     <body>
         <div id="wrapper">
@@ -525,4 +525,4 @@ function CSSLearning() {
   
 }
 
-export default CSSLearning;
+export default App;
